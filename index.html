@@ -3,7 +3,7 @@
 <head>
     <title>Dushyant Khatri</title>
     <style>
-       /* Global Styles */
+      /* Global Styles */
 body {
     font-family: "Roboto", sans-serif;
     line-height: 1.6;
@@ -58,6 +58,16 @@ main {
 .container {
     max-width: 1000px; /* Limit the width of the content */
     margin: 0 auto; /* Center the container horizontally */
+    display: flex; /* Enable flexbox layout */
+    justify-content: space-between; /* Distribute items evenly along the flex container */
+}
+
+.left-column {
+    flex: 0 0 65%; /* Set the width of the left column */
+}
+
+.right-column {
+    flex: 0 0 30%; /* Set the width of the right column */
 }
 
 .section {
@@ -87,12 +97,10 @@ footer {
 
 /* Profile Picture */
 .profile-picture {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     object-fit: cover;
-    float: right;
-    margin-left: 100px;
 }
     </style>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
