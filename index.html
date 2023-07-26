@@ -4,11 +4,17 @@
     <title>Dushyant Khatri</title>
     <style>
         /* Global Styles */
+/* Global Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Arial Nova", Arial, sans-serif; /* Update paragraph font to Arial Nova */
     line-height: 1.6;
     margin: 0;
     padding: 0;
+    background-color: #f0f0f0; /* Add background color of light grey */
+}
+
+h1, h2, h3 {
+    font-family: "Roboto Slab", serif; /* Add heading font of Roboto Slab */
 }
 
 h1 {
@@ -42,11 +48,18 @@ ul {
 header {
     background-color: #f0f0f0;
     padding: 10px;
+    margin: 0 auto; /* Center the header horizontally */
+    max-width: 80%; /* Add a margin to 80% of the screen size */
+    display: flex; /* Enable flexbox layout */
+    align-items: center; /* Align items vertically in the center */
+    justify-content: space-between; /* Distribute items evenly along the flex container */
 }
 
 /* Main Content Styles */
 main {
     padding: 20px;
+    margin: 0 auto; /* Center the main content horizontally */
+    max-width: 80%; /* Add a margin to 80% of the screen size */
 }
 
 .section {
@@ -71,9 +84,26 @@ footer {
     background-color: #f0f0f0;
     padding: 10px;
     text-align: center;
+    margin: 0 auto; /* Center the footer horizontally */
+    max-width: 80%; /* Add a margin to 80% of the screen size */
+}
+
+/* Profile Picture */
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    float: right;
+    margin-left: 20px;
 }
     </style>
 </head>
+<header>
+    <img src="path/to/profile-picture.jpg" alt="Profile Picture" class="profile-picture">
+    <!-- Rest of the header content -->
+</header>
+
 <body>
     <div class="section">
         <h1>Dushyant Khatri</h1>
